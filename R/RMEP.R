@@ -4,7 +4,7 @@
 #' @param Rn net radiation(unit:W/m2)
 #' @param RnL net long-wave radiation(unit:W/m2)
 #' @param Ts surface temperature(unit:Celsius)
-#' @param qs specific humidity(unit:hpa)
+#' @param qs specific humidity(kg/kg)
 #' @return A list includes latent heat flux(EMEP),sensible heat flux(HMEP),ground heat flux(GMEP) and evapotranspiration(ETMEP)
 #' @export
 RMEP<-function(Rn, RnL, qs, Ts, type)   UseMethod ("RMEP")
